@@ -23,8 +23,10 @@ keywords: ucenter,php,同步,关键,js,代码
         success:function(data) {
             var state = data['status'];
             if (state === 'y') {
-            document.writeln(data.info);  //data.info 同步的js代码
-            var jump_script = "<script>window.location.href='" + data.url + "'<\/script>";   //data.url 同步成功后的跳转地址
+            //data.info 同步的js代码
+            document.writeln(data.info);
+            //data.url 同步成功后的跳转地址
+            var jump_script = "<script>window.location.href='" + data.url + "'<\/script>";
             document.writeln(jump_script);
             } else {
                //提示登录失败
