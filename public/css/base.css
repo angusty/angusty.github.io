@@ -82,7 +82,6 @@ a:hover {text-decoration:none;}
     html { -webkit-text-size-adjust:none; }
 }
 @media screen and (max-width:600px) {
-    .container {width: 99%;}
     .post-list ul {padding-left: 10px;}
     .sidebar {padding:1em;}
     .nav-tabs{display: -webkit-box; -webkit-box-pack:justify; display: box; box-pack:justify; }
@@ -93,6 +92,7 @@ a:hover {text-decoration:none;}
     .typo h3 {font-size: 1.1em;}
     .typo h4 {font-size: 1em;}
     .article-wrap { padding-top: 4em;}
+    .visible-lg, .visible-md, .visible-sm, .visible-xs{display: none!important;}
 }
 @media print {
     h2,h3 { page-break-after:avoid;page-break-inside:avoid; }
