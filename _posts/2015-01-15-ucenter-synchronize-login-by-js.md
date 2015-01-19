@@ -24,7 +24,7 @@ UCenter 的中文意思就是”用户中心“。 UCenter 是 Comsenz 旗下各
 
 ###版本1
 ```javascript
-<javascriipt>
+<javascript>
 $.ajax({
   url: url,
   dataType:'json',
@@ -43,7 +43,7 @@ $.ajax({
     }
   }
 });
-</javascriipt>
+</javascript>
 ```
 
 其实最关键的js代码就那么两行， 同步的：  ```document.writeln(data.info)```， 跳转的： ```document.writeln(jump_script)```，都是用的同一个js对象 document.writeln
@@ -52,7 +52,7 @@ $.ajax({
 使用版本1之后遇到了一个问题，会有一段时间页面是一片空白，什么东西都没有，造成的原因恰恰就是因为在执行document.writeln(var)时，var的内容会将当前页面的所有内容覆盖，所以在执行跳转之前，页面会是空白，这样显示很不友好，而且没有给用户提示，于是有了版本2的修改
 
 ```javascript
-<javascriipt>
+<javascript>
 $.ajax({
   url: url,
   dataType:'json',
@@ -73,7 +73,7 @@ $.ajax({
     }
   }
 });
-</javascriipt>
+</javascript>
 ```
 
 这段代码通过jquery的append把同步的js代码追加在head末尾，不会影响当前页面的展示，在没有登录前可以给用户友好的提示
