@@ -25,24 +25,24 @@ UCenter 的中文意思就是”用户中心“。 UCenter 是 Comsenz 旗下各
 ###版本1
 ```javascript
 <javascriipt>
-     $.ajax({
-        url: url,
-        dataType:'json',
-        type : 'post',
-        async: true,
-        success:function(data) {
-            var state = data['status'];
-            if (state === 'y') {
-            //data.info 同步的js代码
-            document.writeln(data.info);
-            //data.url 同步成功后的跳转地址
-            var jump_script = "<script>window.location.href='" + data.url + "'<\/script>";
-            document.writeln(jump_script);
-            } else {
-               //提示登录失败
-            }
-        }
-    });
+$.ajax({
+  url: url,
+  dataType:'json',
+  type : 'post',
+  async: true,
+  success:function(data) {
+    var state = data['status'];
+    if (state === 'y') {
+    //data.info 同步的js代码
+    document.writeln(data.info);
+    //data.url 同步成功后的跳转地址
+    var jump_script = "<script>window.location.href='" + data.url + "'<\/script>";
+    document.writeln(jump_script);
+    } else {
+      //提示登录失败
+    }
+  }
+});
 </javascriipt>
 ```
 
@@ -53,25 +53,25 @@ UCenter 的中文意思就是”用户中心“。 UCenter 是 Comsenz 旗下各
 
 ```javascript
 <javascriipt>
-     $.ajax({
-        url: url,
-        dataType:'json',
-        type : 'post',
-        async: true,
-        success:function(data) {
-            var state = data['status'];
-            if (state === 'y') {
-            //将data.info 同步的js代码 追加到head末尾
-            $('head').append(data.info);
-            //由于data.info是一段同步的js代码，这段代码要执行需要时间，由于无法监测到同步代码的执行时间，延时是为了对这段时间
-            setTimeout(function() {
-              window.location.href= data.url;
-           } , 1000);
-            } else {
-               //提示登录失败
-            }
-        }
-    });
+$.ajax({
+  url: url,
+  dataType:'json',
+  type : 'post',
+  async: true,
+  success:function(data) {
+    var state = data['status'];
+    if (state === 'y') {
+    //将data.info 同步的js代码 追加到head末尾
+    $('head').append(data.info);
+    //由于data.info是一段同步的js代码，这段代码要执行需要时间，由于无法监测到同步代码的执行时间，延时是为了对这段时间
+    setTimeout(function() {
+      window.location.href= data.url;
+    } , 1000);
+    } else {
+       //提示登录失败
+    }
+  }
+});
 </javascriipt>
 ```
 
