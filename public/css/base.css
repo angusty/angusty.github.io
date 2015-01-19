@@ -92,7 +92,7 @@ a:hover {text-decoration:none;}
     .typo h3 {font-size: 1.1em;}
     .typo h4 {font-size: 1em;}
     .article-wrap { padding-top: 4em;}
-    div div.row .aside1{display: none!important;}
+    .visible-lg, .visible-md, .visible-sm, .visible-xs{display: none!important;}
 }
 @media print {
     h2,h3 { page-break-after:avoid;page-break-inside:avoid; }
