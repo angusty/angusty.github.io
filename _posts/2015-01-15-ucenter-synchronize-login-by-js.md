@@ -63,7 +63,8 @@ $.ajax({
     if (state === 'y') {
     //将data.info 同步的js代码 追加到head末尾
     $('head').append(data.info);
-    //由于data.info是一段同步的js代码，这段代码要执行需要时间，由于无法监测到同步代码的执行时间，延时是为了对这段时间
+    //由于data.info是一段同步的js代码，这段代码要执行需要时间，
+    由于无法监测到同步代码的执行时间，延时是为了对这段时间
     setTimeout(function() {
       window.location.href= data.url;
     } , 1000);
