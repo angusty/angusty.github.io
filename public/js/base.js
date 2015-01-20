@@ -70,10 +70,10 @@ $(document).ready(function() {
     $(this).data('clicked', !isClicked);
   });
 
-  $(document).pjax('.pjaxlink', '#pjax', {
-    fragment: "#pjax",
-    timeout: 10000
-  });
+  // $(document).pjax('.pjaxlink', '#pjax', {
+  //   fragment: "#pjax",
+  //   timeout: 10000
+  // });
 
   $(document).on("pjax:end", function() {
     if ($("body").find('.container').width() < 992)
