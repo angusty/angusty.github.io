@@ -93,8 +93,9 @@ a:hover {text-decoration:none;}
     .typo h4 {font-size: 1em;}
     .article-wrap { padding-top: 4em;}
     .visible-lg, .visible-md, .visible-sm, .visible-xs{display: none!important;}
-    h2{font-size: 22px;}
-    #content{font-size: 12px}
+    h2{font-size: 24px;}
+    #content{font-size: 12px;}
+    #content blockquote{font-size: 12px;}
 }
 @media print {
     h2,h3 { page-break-after:avoid;page-break-inside:avoid; }
