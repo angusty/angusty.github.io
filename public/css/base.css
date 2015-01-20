@@ -98,8 +98,8 @@ a:hover {text-decoration:none;}
     #content h2{font-size: 1.4em;}
     #content h3{font-size: 1.2em;}
     #content h4{font-size: 1.1em;}
-    #content{font-size: 14px;}
-    #content blockquote{font-size: 12px;}
+    #content{font-size: 12px;}
+    #content blockquote{font-size: 1em;}
 }
 @media print {
     h2,h3 { page-break-after:avoid;page-break-inside:avoid; }
