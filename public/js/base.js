@@ -72,7 +72,7 @@ $(document).ready(function() {
 
   // $(document).pjax('.pjaxlink', '#pjax', {
   //   fragment: "#pjax",
-  //   timeout: 10000
+  //   timeout: 1200
   // });
 
   $(document).on("pjax:end", function() {
