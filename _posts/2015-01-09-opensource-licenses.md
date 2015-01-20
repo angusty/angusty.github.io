@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 五中常见的开源协议整理
+title: 五中常见的开源协议整理(BSD,Apache,GPL,LGPL,MIT)
 category: 技术
 tags: Concept
 description: 最近做一个项目用了很多开源的组建，项目有可能会发布，所以提前整理整理各个开源协议，有助于项目发展
@@ -57,8 +57,8 @@ MIT是和BSD一样宽范的许可协议,作者只想保留版权,而无任何其
 ![协议分析图][8]
 
 ## 参考
-- <http://www.awflasher.com/blog/archives/939>
-- <http://www.ruanyifeng.com/blog/2011/05/how_to_choose_free_software_licenses.html>
+- [http://www.awflasher.com/blog/archives/939](http://www.awflasher.com/blog/archives/939)
+- [http://www.ruanyifeng.com/blog/2011/05/how_to_choose_free_software_licenses.html](http://www.ruanyifeng.com/blog/2011/05/how_to_choose_free_software_licenses.html)
 
 [0]: https://zh.wikipedia.org/wiki/%E5%BC%80%E6%BA%90%E8%BD%AF%E4%BB%B6
 [1]: http://opensource.org/licenses/category
