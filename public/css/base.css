@@ -5,6 +5,7 @@ body, html {
   height: 100%;
   overflow: hidden;
   background-color: #1f2c39;
+  -webkit-overflow-scrolling: touch;
 }
 .row {height: 100%;}
 /* 导航栏 + 目录栏 */
