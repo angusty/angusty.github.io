@@ -1,6 +1,6 @@
 # 站点信息
-title: yboker的博客
-description: yboker的博客,php,web开发
+title: boker的博客
+description: boker的博客,php,web开发
 url: http://angusty.com
 rss_url: /pages/atom.xml
 
@@ -16,7 +16,7 @@ kramdown:
 
 # 作者信息
 author:
-  name: yboker
+  name: boker
   email: 8236138@qq.com
   link: http://angusty.com
   weibo: http://weibo.com/u/1348575875
