@@ -108,5 +108,15 @@ a:hover {text-decoration:none;}
 @media print and (color) {
     * { -webkit-print-color-adjust:exact;print-color-adjust:exact; }
 }
+/* emoji */
+.emoji {
+  border:1px solid red;
+    width: 1.5em;
+    height: 1.5em;
+    display: inline-block;
+    margin-bottom: -0.25em;
+    background-color: #fafaf6;
+    border: 0px;
+}
 /*更改部分样式*/
 #content pre.prettyprint { display: block; background-color: #444 }
