@@ -2,7 +2,7 @@
 layout: post
 title: 通过ucenter同步的关键js代码
 category: 技术
-tags: [PHP, ucenter]
+tags: [JavaScript, ucenter]
 keywords: ucenter,php,同步,关键,js,代码
 ---
 
