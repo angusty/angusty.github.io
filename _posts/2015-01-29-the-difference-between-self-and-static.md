@@ -61,14 +61,11 @@ require_once __DIR__ . '/Animal.php';
 require_once __DIR__ . '/Dog.php';
 $dog = new Dog(); #实例化子类
 var_dump($dog->selfFactory()); #调用self方法
+//输出 object(demo\Animal)[2] Animal基类对象
 var_dump($dog->staticFactory()); #调用static方法
+//输出 object(demo\Dog)[2] Dog子类对象
 ?>
 ```
-
-### 输出结果
-
-object(demo\Animal)[2]
-object(demo\Dog)[2]
 
 ### 结论
 
