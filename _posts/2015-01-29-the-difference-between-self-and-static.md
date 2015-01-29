@@ -14,10 +14,12 @@ description: php中关于self和static的区别，使用上的不同在哪里
 ### 基类 Animal
 
 ```php
+
 <?php
+# /demo/Animal.php
 namespace demo;
 
-//基类
+#基类
 class Animal
 {
     public function __construct()
@@ -36,12 +38,15 @@ class Animal
 
 }
 ?>
+
 ```
 
 ### 子类 Dog
 
 ```php
+
 <?php
+# /demo/Dog.php
 namespace demo;
 
 //子类继承基类
@@ -50,12 +55,15 @@ class Dog extends Animal
 
 }
 ?>
+
 ```
 
 ### 实例
 
 ```php
+
 <?php
+# /demo/demo.php
 namespace demo;
 require_once __DIR__ . '/Animal.php';
 require_once __DIR__ . '/Dog.php';
@@ -65,6 +73,7 @@ var_dump($dog->selfFactory()); #调用self方法
 var_dump($dog->staticFactory()); #调用static方法
 //输出 object(demo\Dog)[2] Dog子类对象
 ?>
+
 ```
 
 ### 结论
