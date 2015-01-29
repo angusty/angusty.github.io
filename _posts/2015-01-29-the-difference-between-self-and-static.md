@@ -7,7 +7,7 @@ keywords: php,self,static,区别
 description: php中关于self和static的区别，使用上的不同在哪里
 ---
 
-话说在php中使用self和static的区别是什么？这是每一个phper都会遇到的一个问题，千言万语的解释它们的区别，抵不上一段代码，清晰明了。
+> 话说在php中使用self和static的区别是什么？这是每一个phper都会遇到的一个问题，千言万语的解释它们的区别也抵不上一小段代码，废话不说，上代码。
 
 ## 代码
 
