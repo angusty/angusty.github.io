@@ -69,7 +69,7 @@ var_dump($dog->staticFactory()); #调用static方法
 
 ### 结论
 
-结论是什么？已经很明显了。当实例化一个子类的时候，self代表的是基类，static代表的是当前实例化的类。
+结论是什么？已经很明显了。当实例化一个子类的时候，self代表的是基类，static代表的是当前实例化的类。当使用self的时候，self始终指向使用self的当前类，在本例中，在基类Animal中使用new self()，self代表的是当前类Animal；而static与此不同，static具有后期静态绑定能力，换句话说，static总是指向最后实例化的类，在本例中，通过new Dog()实例化了Dog子类，static就指向了实例化的Dog类。
 
 ## 参考
 
