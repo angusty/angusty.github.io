@@ -37,7 +37,7 @@ class Animal
     }
 
 }
-?>
+
 
 ```
 
@@ -54,7 +54,7 @@ class Dog extends Animal
 {
 
 }
-?>
+
 
 ```
 
@@ -72,7 +72,7 @@ var_dump($dog->selfFactory()); #调用self方法
 //输出 object(demo\Animal)[2] Animal基类对象
 var_dump($dog->staticFactory()); #调用static方法
 //输出 object(demo\Dog)[2] Dog子类对象
-?>
+
 
 ```
 
