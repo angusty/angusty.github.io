@@ -13,7 +13,7 @@ description: mysql的group by统计数据条数
 
 #### 解决方案
 
-> 分组的目的一般是为了去除重复，所以为什么要用group by呢，所以把 group by 去掉，然后用 COUNT(DISTINCT id)来统计
+> 分组的目的一般是为了去除重复，所以为什么要用group by呢，所以把 group by 去掉，然后用 COUNT(DISTINCT id)来统计，DISTINCT是mysql的关键字，用于去除重复的。
 
 ```
 SELECT
