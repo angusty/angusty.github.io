@@ -23,6 +23,6 @@ FROM
   LEFT JOIN article_tag  ON article.id = article_tag.article_id
   LEFT JOIN tag  ON tag.id = article_tag.tag_id
 
--- GROUP BY article.id
+-- GROUP BY article.id   # 删除
 
 ```
