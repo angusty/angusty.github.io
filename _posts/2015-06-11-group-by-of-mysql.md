@@ -17,7 +17,7 @@ description: mysql的group by统计数据条数
 
 ```
 SELECT
-    COUNT(DISTINCT article.id)
+  COUNT(DISTINCT article.id)
 FROM
   article
   LEFT JOIN article_tag  ON article.id = article_tag.article_id
