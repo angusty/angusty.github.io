@@ -63,4 +63,5 @@ GROUP BY
     article.id
 
 ```
+
 > 这里主要用到了一个 GROUP_CONCAT 函数用于合并列，SEPARATOR ',' 设置连接符，DISTINCT 去重复。
