@@ -17,12 +17,49 @@ description: mysql的group by统计数据条数
 
 ```
 SELECT
-  COUNT(DISTINCT article.id)
+    COUNT(DISTINCT article.id)
 FROM
-  article
-  LEFT JOIN article_tag  ON article.id = article_tag.article_id
-  LEFT JOIN tag  ON tag.id = article_tag.tag_id
+    article
+    LEFT JOIN article_tag  ON article.id = article_tag.article_id
+    LEFT JOIN tag  ON tag.id = article_tag.tag_id
 
--- GROUP BY article.id   # 删除
+--    GROUP BY article.id   # 删除
+
+```
+
+### 列合并
+
+> 在多对多的关系的时候，一般会有一张中间表记录多对多的关系，比如这三张表： article - article_tag - tag 。每条文章(article)记录里面会有一个标记(tag)。这时候使用联合查询，会出现许多重复的文章(article)记录，所以我们要用group by来分组，顺便达到去除重复文章的目的。
+
+
+#### 一般是这样查询的
+
+```
+
+SELECT
+    article.*,tag.*
+FROM
+    article
+    LEFT JOIN article_tag ON article.id = article_tag.article_id
+    LEFT JOIN tag ON tag.id = article_tag.tag_id
+GROUP BY
+    article.id
+
+```
+
+> 但是如果这样的话，问题随之就来了，有些tag被省略了。所以我们这样来查询。
+
+#### 轮到 GROUP_CONCAT() 上场
+
+```
+
+SELECT
+    article.*, GROUP_CONCAT(DISTINCT tag_name SEPARATOR ',') as tag
+FROM
+    article
+    LEFT JOIN article_tag ON article.id = article_tag.article_id
+    LEFT JOIN tag ON tag.id = article_tag.tag_id
+GROUP BY
+    article.id
 
 ```
