@@ -54,7 +54,7 @@ GROUP BY
 ```
 
 SELECT
-    article.*, GROUP_CONCAT(DISTINCT tag_name SEPARATOR ',') as tag
+    article.*, GROUP_CONCAT(DISTINCT tag_name SEPARATOR ',') as tags
 FROM
     article
     LEFT JOIN article_tag ON article.id = article_tag.article_id
