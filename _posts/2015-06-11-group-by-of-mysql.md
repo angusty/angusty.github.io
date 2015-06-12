@@ -1,19 +1,36 @@
 ---
 layout: post
-title: 关于mysql的group by
+title: 关于mysql的GROUP BY
 category: 技术
 tags: [PHP]
-keywords: mysql,group by
-description: mysql的group by统计数据条数
+keywords: mysql,GROUP BY
+description: mysql的GROUP BY统计数据条数
 ---
 
-### 关于统计分组总条数
+> 这里是关于mysql的GROUP BY的一些总结，会写一些查询的demo，下面是demo所用到的表结构
 
-> mysql经常会使用group by用于数据分组,分组很爽，但是当分组完毕，你发现要统计数据总条数是一个棘手的事情。如果你头脑里一直想着在分组里面统计总条数，那你就会像进了一个坑。怎么办呢，尽快从坑里跳出来吧。恩，是的，那就把group by去掉吧。一旦你这么做了，恭喜你，你出坑了。
+### 表结构
+
+    article表
+    | id | title | content |
+    |----|-------|---------|
+
+    tag表
+    | id | tag_name |
+    |----|----------|
+
+    article_tag表
+    | article_id | tag_id |
+    |------------|--------|
+
+
+### 统计分组总条数
+
+> mysql经常会使用GROUP BY用于数据分组,分组很爽，但是当分组完毕，你发现要统计数据总条数是一个棘手的事情。如果你头脑里一直想着在分组里面统计总条数，那你就会像进了一个坑。怎么办呢，尽快从坑里跳出来吧。恩，是的，那就把GROUP BY去掉吧。一旦你这么做了，恭喜你，你出坑了。
 
 #### 解决方案
 
-> 分组的目的一般是为了去除重复，所以为什么要用group by呢，所以把group by去掉，然后用 COUNT(DISTINCT id)来统计，DISTINCT是mysql的关键字，用于去除重复的。
+> 分组的目的一般是为了去除重复，所以为什么要用GROUP BY呢，所以把GROUP BY去掉，然后用 COUNT(DISTINCT id)来统计，DISTINCT是mysql的关键字，用于去除重复的。
 
 ```
 SELECT
@@ -29,7 +46,8 @@ FROM
 
 ### 列合并
 
-> 在多对多的关系的时候，一般会有一张中间表记录多对多的关系，比如这三张表： article - article_tag - tag 。每条文章(article)记录里面会有一个标记(tag)。这时候使用联合查询，会出现许多重复的文章(article)记录，所以我们要用group by来分组，顺便达到去除重复文章的目的。
+> 在多对多的关系的时候，一般会有一张中间表记录多对多的关系，比如这三张表： article - article_tag - tag 。每条文章(article)记录里面会有一个标记(tag)。这时候使用联合查询，会出现许多重复的文章(article)记录，所以我们要用GROUP BY来分组，顺便达到去除重复文章的目的。
+
 
 
 #### 一般是这样查询的
