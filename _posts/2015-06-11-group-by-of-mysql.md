@@ -13,21 +13,17 @@ description: mysql的GROUP BY统计数据条数
 
 article表
 
-
     | id | title | content |
-    |----|-------|---------|
+
 
 tag表
 
+    | id | tag_name |
 
-| id | tag_name |
-|----|----------|
 
 article_tag表
 
-
-| article_id | tag_id |
-|------------|--------|
+    | article_id | tag_id |
 
 
 ### 统计分组总条数
