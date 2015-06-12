@@ -84,4 +84,4 @@ GROUP BY
 
 ```
 
-> 这里主要用到了一个 GROUP_CONCAT 函数用于合并列，SEPARATOR ',' 设置连接符，DISTINCT 去重复。
+> 这里用到了一个 GROUP_CONCAT 函数用于合并列，SEPARATOR ',' 设置连接符号，DISTINCT 去除重复。
