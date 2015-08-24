@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 2015年常用的模板
+title: 常用的模板资源
 category: 资源
 tags: [PHP,HTML]
 keywords: 2015年,常用,模板
