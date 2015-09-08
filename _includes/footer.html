@@ -35,6 +35,7 @@
     if (check_href_value == '') {
       $('a[href="#{{ site.active }}"]').tab('show');
     } else {
+      console.log(check_href_value);
       $('a[href="' + check_href_value + '"]').tab('show');
     }
 
