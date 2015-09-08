@@ -28,6 +28,7 @@
   <script>
     $('.aside3 .nav-stacked li a').on('click', function() {
       var check_href_value = $(this).attr('href');
+      console.log( 'one: ' + check_href_value);
       $.cookie('left_navside_what_is_check', check_href_value);
     });
 
