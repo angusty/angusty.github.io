@@ -1,13 +1,13 @@
 # 站点信息
-title: boker的博客
-description: boker的博客,php,web开发
+title: 杨波波的博客
+description: 这是一个关于技术与生活的博客，记录我对知识的总结和对生活的感悟。
 url: http://angusty.com
 rss_url: /pages/atom.xml
 
 timezone: PRC
 encoding: UTF-8
 
-permalink: /:year/:month/:day/:title.html
+permalink: /:year/:month/:title.html
 paginate: 10
 markdown: kramdown
 
@@ -21,12 +21,14 @@ author:
   link: http://angusty.com
   weibo: http://weibo.com/u/1348575875
   github: http://github.com/angusty
+  # music:
+  #linkedin:
 
 
 # gavatar头像及Favicon
-gavatar: http://7u2mh0.com1.z0.glb.clouddn.com/yboker-me-and-wife-bipenggou.JPG?imageView/2/w/80/h/80
+#gavatar: http://7u2mh0.com1.z0.glb.clouddn.com/yboker-me-and-wife-bipenggou.JPG?imageView/2/w/80/h/80
+gavatar: /public/img/deer3.png
 favicon: http://7u2mh0.com1.z0.glb.clouddn.com/yboker-shooter-arrow.jpg?imageView/2/w/16/h/16
-#favicon: https://avatars3.githubusercontent.com/u/10364880?v=3&s=460
 
 # google analytics 设置
 ga:
@@ -56,4 +58,3 @@ locals:
   newest: 最新文章
   archive: 归档
   content: 目录
-
