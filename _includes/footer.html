@@ -32,6 +32,7 @@
     });
 
     var check_href_value = $.cookie('left_navside_what_is_check');
+    console.log(check_href_value);
     if (check_href_value == '') {
       $('a[href="#{{ site.active }}"]').tab('show');
     } else {
