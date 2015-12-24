@@ -9,7 +9,7 @@ description:
 
 > 昨天随手一点`brew upadte & brew upgrade`后phpunit出现了各种F，细查下来原来是 php 5.5.17 的一个[bug fix](https://bugs.php.net/bug.php?id=67839) 引起的。为了暂时正常使用phpunit，只能回退php的版本。
 
-## 版本切换方式s
+## 版本切换方式
 
 通过brew安装的php可以通过`brew link`和`brew unlink`来切换不同版本。
 
