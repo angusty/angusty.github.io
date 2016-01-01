@@ -13,9 +13,9 @@ description: 在phpstorm上安装代码检查工具,基于psr2规范的检查
 
 php有很多规范，我遵循的是PSR规范。PSR是PHP通用性框架小组[FIG](http://www.php-fig.org/)（PHP Framework Interop Group） 制定的PHP规范，是PHP开发的事实标准。关于PSR的中文文档，可以参考[https://github.com/PizzaLiu/PHP-FIG](https://github.com/PizzaLiu/PHP-FIG)
 
-## 让phpstrom支持基于psr2的代码检查的步骤
+## 让phpstrom支持基于PSR2的代码检查的步骤
 
-> windows操作系统 phpstrom版本10.0.2
+> 环境： windows操作系统 phpstrom版本10.0.2
 
 ### 安装phpcs
 
