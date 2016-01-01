@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 在phpstorm上安装代码检查工具
-category: 技术
+category: 工具
 tags: [PHP, phpstorm]
 keywords: phpstorm,安装,工具
 description: 在phpstorm上安装代码检查工具,基于psr2规范的检查
