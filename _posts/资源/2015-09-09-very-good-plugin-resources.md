@@ -34,7 +34,9 @@ description: 平常开发过程中会用到很多很多的插件，有的会用�
 - [QrCode](https://github.com/endroid/QrCode) - 生成图片二维码类库
 - [Sami](https://github.com/FriendsOfPHP/Sami) - PHP API文档生成工具，生成代码注释文档。
 
-
+### 类库
+- [hashids](https://github.com/ivanakimov/hashids.php) - 用来生成一个或多个数字的类似于 YouTube 的 hash id。使用 hash id 可以避免你把数据库中真实 id 暴露给用户。
+- [Faker](https://github.com/fzaninotto/Faker) - Faker是一个用于生成模拟或测试数据的php库
 
 
 ## Javascript
