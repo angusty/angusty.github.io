@@ -2,3 +2,11 @@ _site/
 _drafts/
 .DS_Store
 .idea/
+/auth.json
+/.fleet
+/.idea
+/.nova
+/.vscode
+/.zed
+/.history
+.DS_Store

@@ -1,7 +1,7 @@
 # 站点信息
 title: 杨波波的博客
 description: 这是一个关于技术与生活的博客，记录我对知识的总结和对生活的感悟。
-url: http://angusty.com
+url: https://www.ccici.cc
 rss_url: /pages/atom.xml
 
 timezone: PRC
@@ -18,10 +18,8 @@ kramdown:
 author:
   name: boker
   email: 8236138@qq.com
-  link: http://angusty.com
-  weibo: http://weibo.com/u/1348575875
+  link: https://www.ccici.cc
   github: http://github.com/angusty
-  twitter: https://twitter.com/yboker
   # music:
   #linkedin:
 
